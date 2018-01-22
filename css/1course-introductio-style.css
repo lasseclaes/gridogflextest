@@ -1,0 +1,69 @@
+/* line 1, ../_sass/style.scss */
+h1 {
+  color: #ff6f69;
+  text-align: center;
+}
+
+/* line 6, ../_sass/style.scss */
+h2 {
+  background: #88d8b0;
+}
+
+/* line 10, ../_sass/style.scss */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 15, ../_sass/style.scss */
+.list {
+  padding-left: 0;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 80px;
+}
+
+/* line 23, ../_sass/style.scss */
+.list :nth-child(1) {
+  grid-column: 1/ span 2;
+}
+
+/* line 27, ../_sass/style.scss */
+.list :nth-child(6) {
+  grid-column: 1/ span 2;
+}
+
+/* line 31, ../_sass/style.scss */
+li:hover {
+  background-color: #ff6f69;
+}
+
+/* line 35, ../_sass/style.scss */
+a {
+  color: #ffeead;
+}
+
+/* line 39, ../_sass/style.scss */
+li {
+  background-color: #88d8b0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffeead;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* line 49, ../_sass/style.scss */
+html, body {
+  background: #ffeead;
+}
+
+/*# sourceMappingURL=style.css.map */

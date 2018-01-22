@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* Generel styles og mobile first styles */
+
+*{
+	/*margin: 0;
+	padding: 0; */
+	box-sizing: border-box;
+	}
+body{
+	background: red; /* læses ikke, da den sidstangivne tæller - se et par linjer nede */
+	color: #ffffff;
+	background: blue;
+	}
+
+a{	color: red;
+	}
+
+img{
+	max-width: 98%;
+	height: auto;
+	border: 1px #ffffff solid;
+	background: black;
+	padding: 10px;
+	margin: 1%;
+	border-radius: 50px;
+	}
+
+#feet{
+	display: block;
+	margin: 0 auto;
+	}
+
+p img{
+	float:left;
+	padding-right: 10px;
+	margin-left: 0; /* ingen margin tv for venstrefloatet - og alle - billeder */
+	}
+
+.clear{
+	clear: both;
+	}
+
+.brown{
+	color: brown;
+	}
+
+#right{
+	float: right;
+	margin-right: 0; /* ingen margin th for højrefloatet billede */
+	}
+
+body>img {
+    border: 45px pink solid;
+	}
+
+/**** header og navigation ****/
+header{
+	background: green;
+}
+
+nav{
+	background: pink;
+}
+
+nav ul{
+	background: red;
+	padding: 10% 5% 2% 20%;
+}
+
+nav ul li{
+	background: #ffff00;
+}
+
+nav ul li a{
+	background: #00ff00;
+}
+
+.current-page{
+	background: white;
+}
+
+	/*
+p{
+	/* eller hvilket element/hvilken selector, du nu forsøger at style */
+/* 	background-color: red;
+	}
+
+header h1{
+	background-color: blue;
+}
+
+nav ul li{
+	background-color: #00ff00;
+	}*/

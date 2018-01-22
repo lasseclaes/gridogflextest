@@ -1,0 +1,73 @@
+/* grid */
+
+.container {
+    height: 100%; /* lcj */
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px; /*lcj: det virker ikke i Chrome/safari med at sætte height til 100% og så auto på 2. row skulle tage fuld højde. */
+
+    /*lcj: visual representation of grid */
+/*    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "m c c c c c c c c c c c"
+      "f f f f f f f f f f f f"*/
+
+    grid-template-areas:
+    ". h h h h h h h h h h ."
+    "m c c c c c c c c c c c"
+    ". f f f f f f f f f f .";
+/*
+    grid-template-areas:
+    "m h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "m f f f f f f f f f f f";*/
+}
+
+header {
+  grid-area: h;
+}
+
+nav {
+  grid-area: m;
+}
+
+main {
+  grid-area: c;
+}
+
+footer {
+  grid-area: f;
+}
+
+/* oversat fra css/basic.css */
+
+.container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+html, body {
+  /*background-color: #ffeead;*/
+  background-color: green;
+  margin: 10px;
+}
+
+.container > :nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.container > :nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > :nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.container > :nth-child(4n) {
+  background-color: #ffcc5c;
+}
